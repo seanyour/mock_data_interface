@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "mock": "json-server --watch --port 7001 ./mock/db.js"
+    "mock": "cd mock && node db.js > db.json && json-server --watch --port 7001 db.json"
   },
   "devDependencies": {
     "@faker-js/faker": "^7.5.0",

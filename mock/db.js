@@ -1,7 +1,7 @@
-const user = require('./user.js')
+import user from './user.js'
 
-module.exports = () => {
-    return {
-        user,
-    };
+const database = {
+    user,
 }
+
+console.log(JSON.stringify(database));

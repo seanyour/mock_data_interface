@@ -1,8 +1,9 @@
-const {faker} = require('@faker-js/faker');
+import {faker} from "@faker-js/faker";
 
 const {internet, datatype} = faker;
 
-let user = [
+
+const user = [
     {
         id: datatype.uuid(),
         name: 'admin',
@@ -19,4 +20,4 @@ for (let i = 0; i < 10; i++) {
 }
 ;
 
-module.exports = user;
+export default user;
